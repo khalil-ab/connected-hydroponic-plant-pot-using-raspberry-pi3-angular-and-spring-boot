@@ -1,0 +1,76 @@
+<div *ngIf="basket==0" style="height: 480px; border-style: solid; width: 925px; margin: 0 auto; background-color:#f5f5f5;">
+  <ul style="margin:65px;text-align: center;">
+    <img src="/assets/basket_pg.png" class="card-img" alt="Card image cap" width="150" height="150">
+    <h3 style="color: #c5c5c7;">Your basket is empty</h3>
+    <h4 style="color: #c5c5c7;">Already have an account ?
+      <a style="color: dodgerblue;"> Sign in</a>
+      <span> to view the items in your shopping cart</span>
+    </h4>
+  </ul>
+</div>
+
+<div *ngIf="basket>0">
+  <table  border=2px class="table">
+    <tr >
+      <th style="text-align: center;">Picture</th>
+      <th style="text-align: center;">Name</th>
+      <th style="text-align: center;">Category</th>
+      <th style="text-align: center;">Price</th>
+      <th style="text-align: center;">Quantity</th>
+      <th ></th>
+    </tr>
+
+    <tr *ngFor="let c of myarray ;  index as i" style="text-align: center;">
+      {{increment()}}
+      <td ><img class="img-circle" [src]="c.img" alt="Generic placeholder image" width="60" height="60"></td>
+      <td style="vertical-align: middle;">{{c.name}}</td>
+      <td style="vertical-align: middle;">{{c.category}}</td>
+      <td style="vertical-align: middle;">{{c.price}} Dh/Kg</td>
+      <td style="vertical-align: middle;">
+        <input type="number" id="i" name="i"  [(ngModel)]="txt[i]" [value]="j" min="1" style="text-align: center;width: 35px;">
+      </td>
+      <td style="vertical-align: middle;">{{txt[i]*c.price}} Dh</td>
+      <td style="vertical-align: middle;">
+        <button class="btn btn-danger" (click)="onDeleteCat(c.id)">
+          Delete
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </td>
+      {{sum(txt[i]*c.price)}}
+
+
+    </tr>
+
+    <tr >
+      <th ></th>
+      <th ></th>
+      <th ></th>
+      <th ></th>
+      <th style="text-align: center;">Total(Excl. Tax)</th>
+      <th style="text-align: center;">{{sum_price}} Dh</th>
+    </tr>
+
+    <tr >
+      <th ></th>
+      <th ></th>
+      <th ></th>
+      <th ></th>
+      <th style="text-align: center;">VAT</th>
+      <th style="text-align: center;">20%</th>
+     </tr>
+
+     <tr >
+      <th ></th>
+      <th ></th>
+      <th ></th>
+      <th ></th>
+      <th style="text-align: center;">Total(Incl. Tax)</th>
+      <th style="text-align: center;">{{sum_price*1.2 | number : '.2-2'}} Dh</th>
+     </tr>
+     {{initialize()}}
+
+  </table>
+</div>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,93 @@
+
+
+<ul style=" margin: 0 auto;width: 980px; ">
+       <app-weather-widget-main></app-weather-widget-main><!--c est ici ou je vais afficher le contenu html du component categorie-->
+</ul>
+
+<br>
+
+<div class="col-md-6">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/assets/connected hydroponic farm.png" class="card-img" alt="Card image cap" width="150" height="150" >
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title"><strong>Connected hydroponic farm</strong></h4>
+          <p class="card-text">If you have a space in which you want to install your connected hydroponic farm and then benefit from the magnificent plants </p>
+          <a class="card-text"><small class="text-muted" style="color: dodgerblue;" (click)="GoToConnHydr()">Make a purchase</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6" style="height: 180px;">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/assets/maintenance and repair.png" class="card-img" alt="Card image cap" width="120" height="120" style="margin-left: 30px;margin-top: 10px;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title"><strong>Maintenance and repair</strong></h4>
+          <p class="card-text">If you have encountered a problem or malfunction on your farm call us and our team will take care of everything</p>
+          <a class="card-text"><small class="text-muted" style="color: dodgerblue;" (click)="GotoMainRep()">Make a purchase</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/assets/seeds.png" class="card-img" alt="Card image cap" width="110" height="110" style="margin-left: 20px;margin-top: 10px;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title"><strong>Seeds</strong></h4>
+          <p class="card-text">
+            We have different vegetable, fruit and other seeds available if you want to benefit from some new plants on your farm
+            </p>
+          <a class="card-text"><small class="text-muted" style="color: dodgerblue;" (click)="GotoSeeds()">Make a purchase</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6" style="height: 180px;">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="/assets/equipment and accessories.png" class="card-img" alt="Card image cap" width="170" height="150">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title"><strong>Equipment and accessories</strong></h4>
+          <p class="card-text">We have the necessary electronic components for the proper functioning of a hydroponic farm</p>
+          <a class="card-text"><small class="text-muted" style="color: dodgerblue;"  (click)="GotoEquipAces()">Make a purchase</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<!--
+<div class="row">
+  <div class="col-md-2">
+    <app-categories></app-categories>
+  </div>
+  <div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+-->

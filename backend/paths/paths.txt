@@ -1,0 +1,40 @@
+http://localhost:8081/customers
+
+http://localhost:8082/products
+
+http://localhost:8083/bills/
+http://localhost:8083/bills/[le ID d un bill trouvé dans la classe Bill]
+http://localhost:8083/bills/[le ID d un bill trouvé dans la classe Bill]/productItems
+http://localhost:8083/fullBill/[le ID d un bill trouvé dans la classe Bill]
+
+http://localhost:8762/
+
+le service gateway permet d accéder à toutes les adresses ci dessus en utilisant le meme 
+port de gateway qui est 8080
+
+http://localhost:8080/bills
+http://localhost:8080/customers
+http://localhost:8080/products
+http://localhost:8080/fullBill/[le ID d un bill trouvé dans la classe Bill]
+
+les api
+http://localhost:8080/restcountries/rest/v1/all
+http://localhost:8080/muslimsalat/casablanca/1.json
+http://localhost:8080/muslimsalat/casablanca/weekly/1.json
+
+http://localhost:8080/actuator/hystrix.stream
+
+hystric dashboard
+http://localhost:9999/hystrix
+
+
+localhost:8080/etudiants?size=2&page=1&sort=nom,desc
+
+size=2 : deux etudiants par page
+page=1 : afficher la premiere page
+sort=nom,desc : trie descendant selon le nom
+
+localhost:8080/etudiants/search/findByNomContains?mc=adil&page=1&size=2
+ou
+localhost:8080/etudiants/search/parNom?mc=adil&page=1&size=2
+chercher dans la deuxime page (les pages commence de 0) s il y a des etudiants nomé adil et les afficher deux dans chaque page
