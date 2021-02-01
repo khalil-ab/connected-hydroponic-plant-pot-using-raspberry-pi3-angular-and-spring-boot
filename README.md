@@ -1,4 +1,4 @@
-The main idea of this project is Designing a plant pot that provides the plant with what it needs in terms of water (using hydroponic technique), good environment and artificial lighting while having the ability to know what happen around the plant remotely in real time and continuously through a website made by Spring boot and Angular frameworks
+The main idea of this project is Designing a plant pot that provides the plant with what it needs in terms of water (using hydroponic technique), good environment and artificial lighting while having the ability to know what happen around the plant remotely in real time and continuously through a website based on microservice architecture and made by Spring boot, Spring security and Angular frameworks
 
 <p align="center">
   <img src="/1.png">
