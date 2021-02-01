@@ -7,7 +7,7 @@ The main idea of this project is Designing a plant pot that provides the plant w
   <img src="/b.png">
 </p>
 <p align="center">
-  <img src="/c.png">
+  <img src="/c.jpg">
 </p>
 <p align="center">
   <img src="/1.png">
